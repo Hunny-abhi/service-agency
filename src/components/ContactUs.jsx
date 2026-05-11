@@ -10,10 +10,10 @@ const ContactUs = () => {
 
     const formData = new FormData(event.target);
 
-    // ✅ REQUIRED (Web3Forms key)
+   
     formData.append("access_key", "7925ec4b-51e4-464d-83f6-24dae9927658");
 
-    // ✅ Optional but recommended
+   
     formData.append("subject", "New Contact Form Message");
 
     try {
@@ -23,7 +23,7 @@ const ContactUs = () => {
       });
 
       const data = await response.json();
-      console.log(data); // debug
+      console.log(data); 
 
       if (data.success) {
         toast.success("Message sent successfully ✅");

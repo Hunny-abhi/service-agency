@@ -17,7 +17,7 @@ const App = () => {
   const dotRef = useRef(null)
   const outlineRef = useRef(null)
 
-  // Refs for custom cursor Position tracking
+  
   const mouse = useRef({x: 0, y: 0})
   const position = useRef({x: 0, y: 0})
 
